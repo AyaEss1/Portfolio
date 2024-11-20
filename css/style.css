@@ -1,1 +1,86 @@
+*{
+margin: 0;
+padding: 0
+}
+body{
+    min-height: 100vh;
+    background-image: url(roos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: f2bbbb;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+} 
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: fa1214
+}
+nav a:hover{
+    background-color: f2bbbb;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(rgb(255, 0, 179), green, blue, alpha);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+.hello{
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 50px;
+}
+body { text-align: center; } p { width: 50%; margin: 0 auto; }
 
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; } body { display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh; background-color: #ffeed5; } nav { background-color: #f2bbbb; color: white; padding: 10px 20px; } .container { background: #ffeed5; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #727c42(0, 0, 0, 0.1); max-width: 500px; width: 100%; margin: 20px auto; } h1, h2 { text-align: center; } .form-group { margin-bottom: 15px; } .form-group label { display: block; margin-bottom: 5px; color: #727c42; } .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #f2bbbb; border-radius: 5px; font-size: 16px; } .form-group textarea { resize: vertical; height: 100px; } button { background-color: #ffeed5; color: #727c42; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; } button:hover { background-color: white; } footer { background-color: #f2bbbb; color: white; text-align: center; padding: 10px }
